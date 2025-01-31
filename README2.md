@@ -21,7 +21,7 @@ touch index.html ./js/app.js
 
 | flag | description |
 |:---|:---|
-| -A | adjust access and modification times (-m or -a for just one or the other) |
+| -A | adjust access and modification times (-a or -m for just one or the other) |
 |-t | change access + modification times to the specified ("[[CC]YY]MMDDhhmm[.SS]") time. Can be used for time travel.
 
 I found the `-t` flag to be amusing, as it lets you set a date in the future; 100 years from today, Jan. 30th 2125, for example:
@@ -30,6 +30,8 @@ I found the `-t` flag to be amusing, as it lets you set a date in the future; 10
 touch -t "212501301200" index.html
 ```
 *(However, the year is capped at 2262.)*
+
+For more information, check out the documentation by entering `man touch` in the CLI.
 
 ## 2. `>`
 
@@ -64,3 +66,5 @@ truncate -s 0 index.html style.css
 ```
 
 However, it loses the keystroke battle to `touch`, as it is a bit longer and requires flags.
+
+For more information, check out the documentation by entering `man truncate` in the CLI.
